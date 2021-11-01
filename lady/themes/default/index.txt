@@ -1,0 +1,41 @@
+{{ email.title }}
+<br />
+<br />
+{% if email.intro %}
+    {% for i in email.intro %}
+        {{ i }}
+        <br />
+    {% endfor %}
+    <br />
+{% endif %}
+{% if email.dictionary %}
+    {% for k,v in email.dictionary.items() %}
+        {{ k.title() }}: {{ v }}
+        <br />
+    {% endfor %}
+    <br />
+{% endif %}
+{% if email.action %}
+    {%  for a in email.action %}
+        {{ a.instructions }}
+        <br />
+        {{ a.button.link }}
+        <br />
+        <br />
+    {% endfor %}
+{% endif %}
+{% if email.outro %}
+    {% for o in email.outro %}
+        {{ o }}
+        <br />
+    {% endfor %}
+    <br />
+{% endif %}
+{% if email.signature %}
+  {{ email.signature }},
+  <br />
+  {{ lady.product.name }}
+{% endif %}
+<br />
+<br />
+{{ lady.product.copyright }}
