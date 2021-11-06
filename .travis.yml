@@ -16,10 +16,13 @@ script: tox
 # create the Github repo and add it to Travis, run the
 # following command to finish PyPI deployment setup:
 # $ travis encrypt --add deploy.password
+# or
+# $ pip3 install travis-encrypt
+# $ travis-encrypt --deploy user-name password .travis.yml
 deploy:
   provider: pypi
   distributions: sdist bdist_wheel
-  user: tacey_wong
+  user: __token__
   password:
     secure: PLEASE_REPLACE_ME
   on:

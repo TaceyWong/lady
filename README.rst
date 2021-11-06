@@ -1,5 +1,5 @@
 ====
-Lady
+Lady[WIP]
 ====
 
 
@@ -23,15 +23,8 @@ Python package that generates clean, responsive HTML e-mails for sending transac
 * Documentation: https://lady.readthedocs.io.
 
 
-Features
+TODO
 --------
 
-* TODO
+* [ ]Add Jinja2 Template Theme
 
-Credits
--------
-
-This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
-
-.. _Cookiecutter: https://github.com/audreyr/cookiecutter
-.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
